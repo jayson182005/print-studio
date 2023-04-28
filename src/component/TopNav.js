@@ -1,9 +1,42 @@
-import logo from '../Assets/logo.svg';
+import logo from '../assets/logo.svg';
 
 
 function TopNav() {
   return (
     <>
+    <header className="header">
+    
+    <div className="top-bar py-2">
+      <div className="container-fluid py-1 px-lg-5">
+        <div className="row align-items-center">
+          <div className="col-lg-6 d-none d-lg-block">
+            <ul className="list-inline mb-0 small list-separated-light">
+              <li className="list-inline-item me-3">
+                <a href="tel:1-800-123-4567"><svg className=" svg-icon svg-icon-sm me-1"></svg>1-800-123-4567</a>
+              </li>
+              <li className="list-inline-item ps-3">Free shipping on orders over ₱10,000</li>
+            </ul>
+          </div>
+          <div className="col-lg-6 text-end">
+            <ul className="list-inline list-separated-light mb-0">
+              <li className="list-inline-item me-3">
+                
+                <div className="dropdown"><a className="dropdown-toggle reset-anchor small" id="currencyDropdown" href="#"
+                    data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false"> Payment Options</a>
+                  <div className="dropdown-menu dropdown-menu-end mt-2" aria-labelledby="currencyDropdown">
+                    <a className="dropdown-item" href="#">COD</a>
+                    <a className="dropdown-item" href="#">GCASH</a>
+                    <a className="dropdown-item" href="#">PayPal</a>
+                    <a className="dropdown-item" href="#">Credit Card</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
       <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-4 px-lg-4" style={{ height: "100px" }}>
         <div className="container-fluid"><a className="navbar-brand" href="index.html"><img src={logo}
           alt="website-logo" width="220" /></a>

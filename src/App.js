@@ -1,8 +1,10 @@
-
+import TopNav from "./component/TopNav"
 
 function App() {
   return (
-    <></>
+    <>
+      <TopNav/>
+    </>
   );
 }
 
